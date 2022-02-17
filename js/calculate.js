@@ -28,6 +28,10 @@ document.getElementById('calculate').addEventListener('click', function () {
     const balanceAmount = parseFloat(balanceInputText);
     const balance = incomeAmount - previousExpenses;
     balanceInput.innerText = balance;
+
+    if (foodAmount < 0) {
+        console.log('jekonokichu lekhchi');
+    }
 });
 document.getElementById('save-but').addEventListener('click', function () {
     const saveInput = document.getElementById('save-input');
