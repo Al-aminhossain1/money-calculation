@@ -34,3 +34,17 @@ document.getElementById('calculate').addEventListener('click', function () {
     balanceInput.innerText = balance;
     // console.log(balance);
 });
+document.getElementById('save-but').addEventListener('click', function () {
+    const saveInput = document.getElementById('save-input');
+    const saveInputAmount = parseFloat(saveInput.value);
+    // total income
+    const incomeInput = document.getElementById('total-income');
+    const incomeInputText = incomeInput.value;
+    const incomeAmount = parseFloat(incomeInputText);
+    // updete Saving Amount
+    const savingAmountText = document.getElementById('Saving-Amount');
+    const savingAmount = parseFloat(savingAmountText.innerText);
+    const savingTotalAmount = incomeAmount / saveInputAmount;
+    console.log(savingTotalAmount);
+    savingAmountText.innerText = savingTotalAmount;
+})
