@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Calculation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- header section start -->
+    <header>
+        <h1 class="text-center fs-1 mt-5">Money Calculation</h1>
+
+    </header>
+    <!-- main part start -->
+    <main>
+        <section class="d-flex">
+            <div class="row mt-2 p-5">
+                <div class="col-6">
+                    <img class="img-fluid" src="money.jpg" alt="">
+
+                </div>
+                <div class="col-6 fw-bold text-center bg-success p-10 text-dark bg-opacity-10">
+                    <h3>Income</h3>
+                    <p> Income: <input id="total-income" class="block" type="text" name="Income" id=""><br></p>
+                    <h3 class="text-center">Expenses</h3>
+                    <p> Food: <input id="food-input" type="text" name=""><br></p>
+                    <p> Rent: <input id="rent-input" type="text" name=""><br></p>
+                    <p>Cloths: <input id="cloth-input" type="text" name=""></p>
+                    <button id="calculate" class="btn btn-primary px-5 py-2">Calculate</button><br><br>
+                    <h4>Total Expenses: <span id="total-expenses">00</span></h4><br>
+                    <h4>Balance: <span id="total-balance">00</span></h4>
+                    <p class="d-inline">Save:<input type="text" name=""></p>
+                    %
+                    <button class="btn btn-primary px-4 py-2">Save</button><br><br>
+                    <h4>Saving Amount:2000</h4><br>
+                    <h4>Remaining Balanace:2500</h4>
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/calculate.js"></script>
+</body>
+
+</html>
