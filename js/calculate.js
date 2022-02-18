@@ -1,7 +1,16 @@
 //  total input value 
 function totalExpenses(num) {
+    // debugger;
     const expensesInput = document.getElementById(num + '-input');
     const expensesAmount = parseFloat(expensesInput.value);
+    if ((isNaN(expensesAmount))) {
+        const errorFild = document.getElementById('error-sting');
+        errorFild.style.display = 'block';
+    }
+    else if (expensesAmount < 0) {
+        const errorFild = document.getElementById('error-numbar');
+        errorFild.style.display = 'block';
+    }
     return expensesAmount;
 }
 function totalExpensesAmount(num, isadd) {
