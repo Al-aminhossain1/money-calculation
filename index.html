@@ -14,11 +14,12 @@
     <!-- header section start -->
     <header>
         <h1 class="text-center fs-1 mt-5">Money Calculation</h1>
+        <p id="error-mas" class="d-none">please give a positiv nambar</p>
 
     </header>
     <!-- main part start -->
     <main>
-        <section class="d-flex">
+        <section class=" d-flex">
             <div class="row mt-2 p-5">
                 <div class="col-lg-6 col-sm-12">
                     <img class="img-fluid" src="money.jpg" alt="">
@@ -26,19 +27,19 @@
                 </div>
                 <div class="col-lg-6 col-sm-12 fw-bold text-center bg-success p-10 text-dark bg-opacity-10">
                     <h3>Income</h3>
-                    <p> Income: <input id="total-income" class="block" type="text" name="Income" id=""><br></p>
+                    <p> Income: <input id="income-input" class="block" type="text" name="Income" id=""><br></p>
                     <h3 class="text-center">Expenses</h3>
                     <p> Food: <input id="food-input" type="text" name=""><br></p>
                     <p> Rent: <input id="rent-input" type="text" name=""><br></p>
                     <p>Cloths: <input id="cloth-input" type="text" name=""></p>
                     <button id="calculate" class="btn btn-primary px-5 py-2">Calculate</button><br><br>
-                    <h4>Total Expenses: <span id="total-expenses">00</span></h4><br>
-                    <h4>Balance: <span id="total-balance">00</span></h4>
+                    <h4>Total Expenses: <span id="expenses-total">00</span></h4><br>
+                    <h4>Balance: <span id="balance-total">00</span></h4>
                     <p class="d-inline">Save:<input id="save-input" type="text" name=""></p>
                     %
                     <button id="save-but" class="btn btn-primary px-4 py-2">Save</button><br><br>
-                    <h4>Saving Amount: <span id="Saving-Amount">00</span></h4><br>
-                    <h4>Remaining Balanace: <span id="Remaining-Balanace">00</span></h4>
+                    <h4>Saving Amount: <span id="saving-balanace">00</span></h4><br>
+                    <h4>Remaining Balanace: <span id="remaining-balanace">00</span></h4>
 
                 </div>
             </div>
